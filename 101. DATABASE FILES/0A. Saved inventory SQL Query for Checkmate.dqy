@@ -1,0 +1,7 @@
+XLODBC
+1
+DSN=CHECKMATE;SERVER=GAMINGSERVER;PORT=1972;DATABASE=ATI;AUTHENTICATION METHOD=0;UID=_system;STATIC CURSORS=0;QUERY TIMEOUT=0;UNICODE SQLTYPES=0
+SELECT EbayStatus.DateListed, EbayStatus.DateSold, EbayStatus.Status, EbayStatus.ID, EbayStatus.ItemID, Inventory.DateEntered, Inventory.Description, Inventory.PartNumber, Inventory.Interchange, Inventory.PriceRetail, Inventory.PriceWholesale, Inventory.Stock, Inventory.Tag, Inventory.Location  FROM SQLUser.EbayStatus EbayStatus, SQLUser.Inventory Inventory  WHERE Inventory.GUID = EbayStatus.GUID
+
+
+DateListed	DateSold	Status	ID	ItemID	DateEntered	Description	PartNumber	Interchange	PriceRetail	PriceWholesale	Stock	Tag	Location
